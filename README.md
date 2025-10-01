@@ -1,8 +1,8 @@
-# USD to INR Currency Converter
+# USD to INR Currency Converter 💱
 
 A modern, responsive currency converter application built with React, TypeScript, and Tailwind CSS. Convert between US Dollars (USD) and Indian Rupees (INR) with real-time exchange rates.
 
-## Features
+## Features ✨
 
 - Real-time currency conversion between USD and INR
 - Clean, responsive UI built with Tailwind CSS
@@ -11,19 +11,19 @@ A modern, responsive currency converter application built with React, TypeScript
 - Formatted currency display
 - Fallback to mock rates if API is unavailable
 
-## Getting Started
+## 🚀 Quick Start
 
 ### Prerequisites
 
-- Node.js (v14 or later)
-- npm or yarn
-- ExchangeRate-API key (get one from [exchangerate-api.com](https://www.exchangerate-api.com/))
+- Node.js (v16 or later)
+- npm (comes with Node.js)
+- (Optional) ExchangeRate-API key for live rates (fallback to mock data available)
 
-### Installation
+### Local Development
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/usd-to-inr-converter.git
+   git clone https://github.com/nav444nav/usd-to-inr-converter.git
    cd usd-to-inr-converter
    ```
 
@@ -32,9 +32,9 @@ A modern, responsive currency converter application built with React, TypeScript
    npm install
    ```
 
-3. Set up environment variables
+3. (Optional) Set up environment variables
    - Copy `.env.example` to `.env`
-   - Add your ExchangeRate-API key
+   - Add your ExchangeRate-API key for live rates
    ```env
    VITE_EXCHANGE_RATE_API_KEY=your_api_key_here
    ```
@@ -46,7 +46,25 @@ A modern, responsive currency converter application built with React, TypeScript
 
 5. Open [http://localhost:5173](http://localhost:5173) in your browser
 
-## Available Scripts
+### Building for Production
+
+```bash
+npm run build
+```
+
+This will create a `dist` folder with production-ready files.
+
+## 🌐 GitHub Pages Deployment
+
+This app is configured for GitHub Pages deployment. To deploy:
+
+1. Push your code to the `main` branch
+2. GitHub Actions will automatically build and deploy to GitHub Pages
+3. Your app will be available at: `https://nav444nav.github.io/usd-to-inr-converter`
+
+> Note: The app uses client-side routing. Make sure to configure GitHub Pages to use the `gh-pages` branch and set the base URL in `vite.config.ts` if you change the repository name.
+
+## 📦 Available Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
